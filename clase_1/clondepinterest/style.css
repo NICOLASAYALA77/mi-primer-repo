@@ -1,0 +1,293 @@
+body{
+     width: 100%;
+    margin: 5px 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+#navbar-pinterest{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 15px;
+    z-index: auto;
+}
+
+#pinterest-icon{
+    margin: 0px 2px;
+    width: 20px;
+    height: 20px;
+    display: flex; 
+
+}
+
+.nav-btn{
+    padding: 0px 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    font-weight: bold;
+    height: 7vh;
+    border: none;
+    background-color: white;
+}
+
+.nav-btn:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.nav-btn:focus{
+    background-color: black;
+    color: white;
+}
+
+
+.finder{
+    border: 1px solid lightgray;
+    width: 60%;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background-color: #f0f0f0;
+}
+
+.finder:hover{
+    box-shadow:  0px 0px 4px 0px #b5b5b5;
+}
+
+.finder i{
+    font-size: 18px;
+    color: gray;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.finder input{
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #f0f0f0;;
+}
+
+.finder input:focus{
+    outline: none;
+}
+
+#profile-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-img:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.user-icon span{
+    font-size: 18px;
+}
+
+.user-icon span{
+    color: #fff;
+}
+
+.user-icon{
+    background-color: #ef6c00;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+#content{
+    width: 90%;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 40px;
+    padding: 0px 20px;
+    
+}
+
+#content .card-image{
+    width: 100%;
+    margin: 0 0 20px;
+    background: #fff;
+    overflow: hidden;
+    break-inside: avoid;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+}
+
+#content .card-image img{
+    max-width: 100%;
+}
+
+.boton-guardar{
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 7em;
+    border: none;
+    background-color: #e41c24;
+    color: #fff;
+    font-weight: bold;
+}
+
+.boton-guardar:hover{
+    cursor: pointer;
+    background-color: #be161b;
+}
+
+.boton-guardar:focus{
+    background-color: black;
+    color: white;
+}
+
+.boton-compartir{
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 65px;
+    padding: 10px 0px;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 3.5em;
+    border: none;
+    background-color: #e41c24;
+    color: #fff;
+    font-weight: bold;
+}
+
+.boton-compartir:hover{
+    cursor: pointer;
+    background-color: #be161b;
+}
+
+.boton-compartir:focus{
+    background-color: black;
+    color: white;
+}
+
+.boton-mas{
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 3.5em;
+    border: none;
+    background-color: #e41c24;
+    color: #fff;
+    font-weight: bold;
+}
+
+.boton-mas:hover{
+    cursor: pointer;
+    background-color: #be161b;
+}
+
+.boton-mas:focus{
+    background-color: black;
+    color: white;
+}
+
+#content .card-image:hover .boton-guardar{
+    display: block;
+}
+
+#content .card-image:hover .boton-compartir{
+    display: block;
+}
+
+#content .card-image:hover .boton-mas{
+    display: block;
+}
+
+#content .card-image:hover img{
+    filter: brightness(50%);
+    cursor: zoom-in;
+}
+
+#logo{
+    width: 100%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 984px) and (min-width: 651px) {
+    #content{       
+        columns: 3;
+    }
+}
+
+
+
+@media only screen and (max-width: 650px) {
+    #navbar-pinterest{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+    }
+
+    #navbar-pinterest button:nth-child(3){
+        display: none;
+    }
+
+    .finder{
+        border: 1px solid lightgray;
+        width: 30px;
+        height: 45px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        background-color: #f0f0f0;
+    }
+
+    .finder input{
+        display: none;
+    }
+    
+    #content{       
+        columns: 2;
+    }
+}
